@@ -38,7 +38,8 @@ Timeline: A thorough project plan was developed, defining important milestones, 
 Risk Management: Stakeholder conflicts, resource limitations, technical difficulties, and stakeholders who increase deliverables or postpone deadlines were among the possible risks that were recognized, evaluated, and recorded. For every risk, a mitigation strategy was created.
 
 Communication Plan: To help project stakeholders communicate effectively, a communication plan was created. It includes methods for feedback and collaboration, status updates regularly, and regular updates on project progress.
-Analysis Phase
+
+# Analysis Phase
 
 Requirements Gathering: Stakeholder workshops, surveys, and interviews were used to collect requirements. Both non-functional and functional requirements were identified, including security and performance as well as functional requirements like ranking calculations and score recording.
 
