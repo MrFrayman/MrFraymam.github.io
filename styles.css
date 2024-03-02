@@ -1,0 +1,289 @@
+.montserrat-persona {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.comfortaa-persona {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Reset default browser styles */
+html,
+body,
+ul,
+li,
+p,
+h1 {
+  font-family: "Comfortaa", sans-serif;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gotham", sans-serif;
+  color: #000;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  display: block;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  font-weight: 200;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #000;
+}
+
+header h2 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: #0c0c0c;
+  margin-bottom: 20px;
+  width: 800px;
+  line-height: 85px;
+  padding: 0px 270px;
+  margin-top: -5px;
+}
+
+header img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+header h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 3%;
+}
+header span {
+  color: rgb(96, 96, 249);
+  text-decoration: underline;
+}
+
+header h3 span {
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
+header p {
+  margin: 2% 0%;
+  font-weight: 800;
+}
+
+header p a {
+  text-decoration: underline;
+  color: rgb(96, 96, 249);
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+section ul li {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.spear {
+  margin-left: 1rem;
+}
+
+.experience-item {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.company-logo {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.company-logo img {
+  max-width: 100px; /* Adjust the max width as needed */
+  height: auto;
+}
+
+.experience-details {
+  flex: 1 1 auto;
+}
+
+.experience-details h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.experience-details p {
+  margin-bottom: 5px;
+}
+
+.experience-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience-details ul li {
+  margin-bottom: 5px;
+  width: 600px;
+}
+
+
+#online-presence li {
+  font-size: 1.5rem ;
+  color: rgb(134, 190, 255);
+  display: flex;
+}
+
+#online-presence h2 {
+  background-image: url("img/text-highlight.png");
+  background-repeat: no-repeat;
+  background-position: -10px;
+  background-size: 250px ;
+}
+
+#experience h2 {
+  background-image: url("img/text-highlight.png");
+  background-repeat: no-repeat;
+  background-position: -10px;
+  background-size: 200px ;
+}
+
+#projects h2 {
+  background-image: url("img/text-highlight.png");
+  background-repeat: no-repeat;
+  background-position: -10px;
+  background-size: 150px ;
+}
+
+#projects h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+/* Add this at the end of your CSS file */
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  header h2 {
+    font-size: 2rem;
+    padding-left: 10px;
+    margin-top: -5px;
+    line-height: 50px;
+    width: 350px;
+  }
+
+  header img {
+    width: 120px;
+    height: 120px;
+  }
+
+  header h3 {
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+
+  header p {
+    margin: 5% 5% 5% 5%;
+  }
+
+  .experience-details ul li {
+    width: auto;
+  }
+
+  #online-presence h2,
+  #experience h2,
+  #projects h2 {
+    background-size: 100px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  section p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .company-logo img {
+    max-width: 80px;
+  }
+
+  .experience-details {
+    width: 100%;
+  }
+
+  .experience-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .experience-details p {
+    font-size: 0.9rem;
+  }
+
+  .experience-details ul li {
+    font-size: 0.9rem;
+  }
+
+  #online-presence li {
+    font-size: 1rem;
+  }
+}
