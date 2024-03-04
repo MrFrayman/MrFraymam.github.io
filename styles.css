@@ -14,7 +14,7 @@
 /* Reset default browser styles */
 html,
 body {
-   overflow-x: hidden;
+  overflow-x: hidden;
 }
 ul,
 li,
@@ -61,7 +61,7 @@ header h2 {
   margin-bottom: 20px;
   width: 800px;
   line-height: 85px;
-  padding: 0px 220px;
+  padding: 0px 270px;
   margin-top: -5px;
 }
 
@@ -177,37 +177,66 @@ a:hover {
   width: 600px;
 }
 
+#online-presence ul {
+  display: grid;
+  grid-row-gap: 2px;
+  padding-top: 2%;
+}
 
+#online-presence a {
+  color: royalblue;
+}
 #online-presence li {
-  font-size: 1.5rem ;
+  font-size: 1.3rem;
   color: rgb(134, 190, 255);
   display: flex;
+  grid-row: 1;
+  font-weight: 800;
+}
+
+#online-presence :nth-child(3) {
+  grid-row: 2;
+}
+
+#online-presence :nth-child(4) {
+  grid-row: 2;
+}
+#online-presence :nth-child(5) {
+  grid-row: 2;
 }
 
 #online-presence h2 {
   background-image: url("img/text-highlight.png");
   background-repeat: no-repeat;
   background-position: -10px;
-  background-size: 250px ;
+  background-size: 250px;
 }
 
 #experience h2 {
   background-image: url("img/text-highlight.png");
   background-repeat: no-repeat;
   background-position: -10px;
-  background-size: 200px ;
+  background-size: 200px;
 }
 
 #projects h2 {
   background-image: url("img/text-highlight.png");
   background-repeat: no-repeat;
   background-position: -10px;
-  background-size: 150px ;
+  background-size: 150px;
 }
 
 #projects h3 {
   font-size: 1.5rem;
   font-weight: 800;
+}
+
+footer{
+  color: #201d22c6;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-weight: 500;
 }
 
 /* Add this at the end of your CSS file */
