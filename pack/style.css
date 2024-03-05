@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap");
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --blue: rgb(96, 96, 249);
+  --black: #0e1111;
+}
+
+body {
+  /* background-color: var(--blue); */
+  background-repeat: no-repeat;
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF53455B', endColorstr='#FF201E22');
+  background-position: center;
+  background-size: cover;
+  fill-opacity: var(#201d22);
+  background-image: -moz-radial-gradient(top, circle, rgb(96, 96, 249) 0%, rgb(53, 53, 143) 70%);
+  background-image: -webkit-radial-gradient(top, circle, rgb(96, 96, 249) 0%, rgb(53, 53, 143) 70%);
+  background-image: radial-gradient(circle at top, rgb(96, 96, 249) 0%, rgb(53, 53, 143) 70%);
+  color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  padding: 1.5em 0;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.container {
+  margin: 0 auto;
+  width: 120%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: opacity(80%);
+  transition: all 0.8s;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-1-3 {
+  border: 2px solid var(--blue);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20pt;
+  margin: 6pt;
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.grid-1-3:hover {
+  transform: translate(0.1%, 2%);
+  box-shadow: 0 0 10px #00000065;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-size: auto;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .grid-1-3 {
+    float: left;
+    width: 20%;
+  }
+  .grid-1-3:nth-child(odd) {
+    clear: left;
+  }
+}
+@media screen and (min-width: 800px) {
+  .grid-1-3 {
+    width: 33.3333333%;
+  }
+  .grid-1-3:nth-child(3n + 1) {
+    clear: left;
+  }
+  .grid-1-3:nth-child(odd) {
+    clear: none;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .grid-1-3 {
+    width: 20%;
+  }
+  .grid-1-3:nth-child(odd),
+  .grid-1-3:nth-child(3n + 1) {
+    clear: none;
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: #201d22;
+  font-weight: bolder;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333333333em;
+}
+
+p {
+  font-size: 0.875em;
+}
+
+p,
+ul {
+  margin: 0 0 1.5em;
+}
+
+ul {
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin: 0 0 0.8333333333333333em;
+}
+
+.cnt {
+  display: grid;
+  position: absolute;
+  padding-top: 0.5rem;
+}
+
+.cnt a {
+  transform: translateX(30px);
+}
+
+.pack-btn {
+  background-color: #fff;
+  border: 3px solid transparent;
+  color: var(--blue);
+  width: 3rem;
+  height: 2.8rem;
+  border-radius: 50px;
+  font-size: 1.0rem;
+  font-weight: 600;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pack-btn:hover {
+  color: var(--blue);
+  transform: scale(90%);
+  cursor: pointer;
+}
+
+.button {
+  background-color: var(--black);
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 120px;
+  transition: all 0.4s;
+}
+
+.button:hover {
+  transform: translate(-1%, 5%);
+  box-shadow: 0 0 10px #41ffa065;
+  background-color: var(--blue);
+}
+
+.uppercase,
+.button,
+h2 {
+  text-transform: uppercase;
+}
+
+sup,
+.small {
+  font-size: 0.6125em;
+}
