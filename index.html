@@ -204,14 +204,9 @@
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script>
-      document
-        .querySelector(".hamburger-button")
-        .addEventListener("click", function () {
-          document.querySelector(".nav-links").style.display =
-            document.querySelector(".nav-links").style.display == "none"
-              ? "block"
-              : "none";
-        });
+      document.querySelector(".hamburger-button").addEventListener("click", function () {
+        document.querySelector(".nav-links").style.display = document.querySelector(".nav-links").style.display == "none" ? "flex" : "none";
+      });
     </script>
   </body>
 </html>
