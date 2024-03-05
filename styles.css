@@ -54,7 +54,7 @@ body {
 }
 
 .container a {
-  transform: translateX(900px);
+  transform: translateX(950px);
 }
 
 .pack-btn {
@@ -406,6 +406,7 @@ footer {
     border: 3px solid var(--black);
     width: 6rem;
     height: 2.6rem;
+    border-radius: 5px;
     font-size: 0.8rem;
   }
 
@@ -426,9 +427,14 @@ footer {
 
   .nav-links {
     display: none;
+    transition: display 0.3s ease-in-out;
+    position: absolute;
     background-color: transparent;
     color: white;
+    margin-top: -15%;
+    margin-left: 10%;
   }
+
   .nav-links a {
     display: block;
     padding: 15px;
