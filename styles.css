@@ -1,3 +1,8 @@
+:root {
+  --blue: rgb(96, 96, 249);
+  --black: #101320;
+}
+
 .montserrat-persona {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -35,9 +40,56 @@ h4 {
 
 body {
   font-family: "Gotham", sans-serif;
-  color: #000;
+  color: var(--black);
   background-color: #fff;
   line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container a {
+  transform: translateX(1080px);
+}
+
+.pack-btn {
+  background-color: var(--blue);
+  border: 3px solid transparent;
+  color: #fff;
+  width: 8rem;
+  height: 2.8rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.pack-btn:hover {
+  color: var(--blue);
+  background-color: #fff;
+  border: 3px solid var(--blue);
+  cursor: pointer;
+}
+
+.down-btn {
+  background-color: var(--black);
+  color: #fff;
+  border: 3px solid var(--black);
+  width: 8rem;
+  height: 3rem;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+}
+
+.down-btn:hover {
+  background-color: #fff;
+  color: var(--black);
+  border: 3px solid var(--black);
 }
 
 header {
@@ -51,13 +103,13 @@ header {
 header h1 {
   font-size: 1.6rem;
   font-weight: 900;
-  color: #000;
+  color: var(--black);
 }
 
 header h2 {
   font-size: 4.5rem;
   font-weight: 900;
-  color: #0c0c0c;
+  color: var(--black);
   margin-bottom: 20px;
   width: 800px;
   line-height: 85px;
@@ -77,14 +129,14 @@ header h3 {
   margin-top: 3%;
 }
 header span {
-  color: rgb(96, 96, 249);
+  color: var(--blue);
   text-decoration: underline;
 }
 
 header h3 span {
   font-weight: 600;
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
 
 header p {
@@ -94,7 +146,7 @@ header p {
 
 header p a {
   text-decoration: underline;
-  color: rgb(96, 96, 249);
+  color: var(--blue);
   font-style: italic;
 }
 
@@ -110,14 +162,14 @@ section {
 section h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #000000;
+  color: var(--black);
   margin-bottom: 20px;
 }
 
 section p {
   font-size: 1rem;
   font-weight: 400;
-  color: #000;
+  color: var(--black);
   margin-bottom: 10px;
 }
 
@@ -126,7 +178,7 @@ section ul li {
 }
 
 a {
-  color: #000000;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -184,11 +236,11 @@ a:hover {
 }
 
 #online-presence a {
-  color: royalblue;
+  color: var(--blue);
 }
 #online-presence li {
   font-size: 1.3rem;
-  color: rgb(134, 190, 255);
+  color: var(--blue);
   display: flex;
   grid-row: 1;
   font-weight: 800;
@@ -231,12 +283,16 @@ a:hover {
   font-weight: 800;
 }
 
-footer{
+footer {
   color: #201d22c6;
   display: flex;
   justify-content: center;
   margin-top: 15px;
   font-weight: 500;
+}
+
+#hamburger-menu {
+  display: none;
 }
 
 /* Add this at the end of your CSS file */
@@ -316,5 +372,70 @@ footer{
 
   #online-presence li {
     font-size: 1rem;
+  }
+
+  .container {
+    padding-top: 0.5rem;
+  }
+
+  .container a {
+    transform: translate(1px);
+  }
+
+  .pack-btn {
+    display: none;
+    width: 6rem;
+    height: 2.4rem;
+    font-size: 0.8rem;
+  }
+
+  .pack-btn-mob {
+    background-color: var(--blue);
+    border: 3px solid transparent;
+    color: #fff;
+    width: 6rem;
+    height: 2.4rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+
+  .down-btn-mob {
+    background-color: var(--black);
+    color: #fff;
+    border: 3px solid var(--black);
+    width: 6rem;
+    height: 2.6rem;
+    font-size: 0.8rem;
+  }
+
+  #hamburger-menu {
+    display: block;
+    width: 200px;
+    background-color: #fff;
+  }
+
+  .hamburger-button {
+    background-color: transparent;
+    color: var(--black);
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border: transparent;
+  }
+
+  .nav-links {
+    display: none;
+    background-color: transparent;
+    color: white;
+  }
+  .nav-links a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  .nav-links a:hover {
+    background-color: #111;
   }
 }
