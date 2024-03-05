@@ -18,18 +18,29 @@
     />
   </head>
   <body>
-    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div id="hamburger-menu">
+      <button class="hamburger-button">☰</button>
+      <div class="nav-links">
+        <a href="./pack/"><button class="pack-btn-mob">View Packs</button></a>
+        <a
+          href="./img/Maarif Ur Rehman Resume - Feb 2024.pdf"
+          download="Syed Maarif's Resume"
+          ><button class=" down-btn-mob">Download Resume</button></a
+        >
+      </div>
+    </div>
+
+    <nav class="navbar" role="navigation">
       <div class="container">
-        <div class="navbar-brand"><a class="navbar-item" href="/"><i class="fak fa-mf-logo has-text-primary fa-4x"></i></a><a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
-        <div class="navbar-menu is-shadowless" id="navMenu">
-          <div class="navbar-start"></div>
-          <div class="navbar-end"><a class="navbar-item has-text-weight-normal" href="/mentorship">Mentorship</a>
-            <div class="navbar-item"><a class="button is-primary is-outlined is-rounded has-text-weight-normal" href="/contact">Say Hello </a></div>
-          </div>
-        </div>
+        <a href="./pack/"><button class="pack-btn">View Packs</button></a>
+        <a
+          href="./img/Maarif Ur Rehman Resume - Feb 2024.pdf"
+          download="Syed Maarif's Resume"
+          ><button class="pack-btn down-btn">Download Resume</button></a
+        >
       </div>
     </nav>
-    
+
     <header>
       <img src="img/pfp.png" alt="Syed Maarif" />
       <h1>Hey, I'm Syed Maarif</h1>
@@ -66,20 +77,16 @@
         aria-label="Follow @MrFrayman on GitHub"
         >Github</a
       >
-
-      <div class="box">
-        <button class="gm-btn gb-shutter">Button</button>
-    </div>
-
     </header>
 
     <section id="experience" class="spear">
       <h2>Experience</h2>
       <div class="experience-item">
         <div class="company-logo">
-          <a href="https://www.global-dubai.com/" target="_blank"><img
-            src="img/globalconsults_logo.jpeg"
-            alt="Global the Business Design Company Logo"
+          <a href="https://www.global-dubai.com/" target="_blank"
+            ><img
+              src="img/globalconsults_logo.jpeg"
+              alt="Global the Business Design Company Logo"
           /></a>
         </div>
         <div class="experience-details">
@@ -186,13 +193,25 @@
 
     <footer>
       <div class="footer">
-          <div class="col-lg-4 text-lg-start">Copyright &copy; 2024 IronBrickStudios @UserCentral Global.<a
-                  href="https://panelforheadstartup.pages.dev/"></a>
-          </div>
+        <div class="col-lg-4 text-lg-start">
+          Copyright &copy; 2024 IronBrickStudios @UserCentral Global.<a
+            href="https://panelforheadstartup.pages.dev/"
+          ></a>
+        </div>
       </div>
-</footer>
+    </footer>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      document
+        .querySelector(".hamburger-button")
+        .addEventListener("click", function () {
+          document.querySelector(".nav-links").style.display =
+            document.querySelector(".nav-links").style.display == "none"
+              ? "block"
+              : "none";
+        });
+    </script>
   </body>
 </html>
